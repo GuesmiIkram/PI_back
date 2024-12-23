@@ -29,7 +29,7 @@ public class ReservationController {
     }
 
     
-     @GetMapping
+     @GetMapping("/client/{clientId}")
     public List<Reservation> getReservationsByClientId(@RequestParam Long clientId) {
         return reservationService.getReservationsByClientId(clientId);
     }
